@@ -1,6 +1,7 @@
-from django.urls import re_path
+from django.urls import re_path, path
 from Tareasapp import views
 
 urlpatterns = [
-    re_path(r'^tarea$', views.tareas_api)
+    path('tareas', views.tareas_api),
+    path('auth/register',views.UsuarioView.as_view(), name='usuarios_list'),
 ]

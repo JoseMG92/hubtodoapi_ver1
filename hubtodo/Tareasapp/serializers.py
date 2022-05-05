@@ -5,4 +5,4 @@ from Tareasapp.models import Tareas
 class TareasSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tareas
-        fields = ('id_tarea', 'title','dead_line', 'description', 'isCompleted', 'priority_id', 'id_usuario')
+        fields = ('id_tarea', 'title','dead_line', 'description', 'isCompleted', 'priority_id', 'user_id')
